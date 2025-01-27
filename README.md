@@ -8,4 +8,4 @@
 # List Specific resources used to complete the assignment.
 #   I used the reading provided by the class.
 
-![Example Image](./Assignment1/example.PNG?raw=true)
+![Example Image](./example.PNG?raw=true)
