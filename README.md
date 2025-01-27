@@ -7,3 +7,5 @@
 #          clear the buffer text, display the buffer text, or exit the program.
 # List Specific resources used to complete the assignment.
 #   I used the reading provided by the class.
+
+![Example Image](./Assignment1/example.PNG?raw=true)
