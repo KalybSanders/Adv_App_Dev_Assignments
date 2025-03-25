@@ -23,10 +23,13 @@ s.connect(("127.0.0.1", 40210))
 received_msg = s.recv(256).decode('utf-8')
 
 # set the message to uppercase
-uppercase_msg = received_msg.upper().encode('utf-8')
+uppercase_msg = received_msg.upper()
+uppercase_encoded = uppercase_msg.encode('utf-8')
+
+print("converting received message to uppercase: \n" + received_msg + " -----> " + uppercase_msg)
 
 # send the message back on the socket to A.
-s.sendall(uppercase_msg)
+s.sendall(uppercase_encoded)
 
 # print the socket close message
 print(s.recv(256).decode('utf-8'))

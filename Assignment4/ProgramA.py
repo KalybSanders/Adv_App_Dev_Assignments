@@ -25,11 +25,10 @@ conn, addr = s.accept()  # Blocks
 msg = input("Input a string to send: ").encode('utf-8')
 conn.sendall(msg)
 
-# receive message from B (the entered message in upper case).
+# receive message from B (should be the entered message in upper case).
 new_msg = conn.recv(256).decode('utf-8')
-# altered_message = altered_text.decode('utf-8')
 
-# print the altered message
+# print the new message from B
 print(new_msg)
 
 # close the socket.
